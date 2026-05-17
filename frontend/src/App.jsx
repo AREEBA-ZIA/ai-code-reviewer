@@ -6,8 +6,7 @@ function App() {
 
   useEffect(() => {
     // Baad mein real API se connect karenge
-   fetch("http://localhost:8000/api/reviews")
-  .then(res => res.json())
+fetch("https://ai-code-reviewer-production-c9e2.up.railway.app/api/reviews")  .then(res => res.json())
   .then(data => {
     setReviews(data);
     setLoading(false);
